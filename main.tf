@@ -40,7 +40,7 @@ variable "count" { default = "1" }
 # Setup
 #
 module "elasticache_setup" {
-  source = "github.com/mondorobot/terraform-memcached"
+  source = "github.com/mondorobot/terraform-elasticache"
   cluster_name = "${var.cluster_name}-memcached"
   subnet_ids = "${var.subnet_ids}"
   vpc_id = "${var.vpc_id}"
